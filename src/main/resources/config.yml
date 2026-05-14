@@ -1,0 +1,66 @@
+messages:
+  prefix: "&x&A&F&0&0&F&F&lᴘ&x&A&7&0&0&F&F&lʀ&x&A&0&0&0&F&F&lɪ&x&9&8&0&0&F&F&lᴍ&x&9&1&0&0&F&F&lᴇ&x&8&9&0&0&F&F&lᴄ&x&8&2&0&0&F&F&lʜ&x&7&A&0&0&F&F&lᴇ&x&7&3&0&0&F&F&lᴄ&x&6&B&0&0&F&F&lᴋ"
+  no-permission: "&cNie masz uprawnien! (primecheck.admin)"
+  player-not-found: "&cNie znaleziono takiego gracza."
+  check-location-not-set: "&cNie ustawiono jeszcze lokalizacji do sprawdzania! Uzyj /sprawdz lokalizacja ustaw."
+  checking-player: "&aRozpoczeto sprawdzanie gracza &e{player}&a."
+  is-being-checked: "&cJestes sprawdzany przez &e{admin}&c. Prosze wykonywac polecenia."
+  cannot-check-yourself: "&c"
+  player-already-checked: "&cTen gracz jest juz sprawdzany."
+  check-location-set: "&aLokalizacja do sprawdzania zostala ustawiona!"
+  check-location-removed: "&aLokalizacja do sprawdzania zostala usunieta."
+  spawn-location-set: "&aSpawn zostal ustawiony!"
+  command-blocked: "&cTa komenda jest zablokowana podczas sprawdzania."
+  check-ended-clean: "&aZakonczono sprawdzanie. Gracz &e{player} &ajest czysty."
+  player-teleported-to-spawn: "&aZostales przeteleportowany na spawn."
+  no-longer-checked: "&aJuz nie jestes sprawdzany. Dziekujemy za wspolprace."
+  gui-usage-info: "&aJestes w trakcie sprawdzania. Uzyj /sprawdz, aby otworzyc GUI."
+  player-cannot-be-checked: "&cTen gracz jest chroniony przed sprawdzaniem."
+
+gui:
+  title: "&cSprawdzanie: &f{player}"
+  clean:
+    material: LIME_WOOL
+    name: "&aCzysty"
+    lore:
+      - "&7Kliknij, aby oznaczyc gracza"
+      - "&7jako czystego i zwolnic go."
+  cheater:
+    material: RED_WOOL
+    name: "&cCheater"
+    lore:
+      - "&7Kliknij, aby ukarac gracza"
+      - "&7za uzywanie cheatow."
+  logout:
+    material: OAK_DOOR
+    name: "&6Wylogowanie"
+    lore:
+      - "&7Kliknij, aby ukarac gracza"
+      - "&7za wylogowanie sie podczas sprawdzania."
+  no-cooperation:
+    material: BARRIER
+    name: "&cBrak wspolpracy"
+    lore:
+      - "&7Kliknij, aby ukarac gracza"
+      - "&7za brak wspolpracy."
+
+bossbar:
+  message: "&c&lJESTES SPRAWDZANY! &7| &fSluchaj polecen administratora!"
+  color: RED
+  style: SOLID
+
+decision-commands:
+  clean: ""
+  cheater: "ban {player} Cheating"
+  logout: "ban {player} Logout during check"
+  no-cooperation: "ban {player} No cooperation during check"
+
+allowed-commands-while-checked:
+  - "msg"
+  - "r"
+  - "pomoc"
+  - "help"
+
+locations:
+  check-location: ""
+  spawn-location: ""

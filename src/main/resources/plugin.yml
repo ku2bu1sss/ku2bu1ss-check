@@ -1,0 +1,18 @@
+name: kubus-check
+version: '1.0'
+main: ku2bu1ss.kubusCheck.KubusCheck
+api-version: 1.18
+author: ku2bu1ss
+description: plugin do sprawdzania graczy
+commands:
+  sprawdz:
+    description: Glowna komenda pluginu do sprawdzania.
+    usage: /<command> [gracz | lokalizacja | setspawn]
+    aliases: [check, sprawdzam]
+permissions:
+  primecheck.admin:
+    description: Daje dostep do wszystkich komend i funkcji pluginu.
+    default: op
+  primecheck.bypass:
+    description: Gracz z tym uprawnieniem nie moze byc sprawdzany.
+    default: false
